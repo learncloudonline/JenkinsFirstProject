@@ -1,0 +1,28 @@
+git basic commands
+
+go to main folder and create .gitignore file
+cmd:
+touch .gitignore
+git config --global user.name "your-name"
+git config --global user.email "your-email@gmail.com"
+
+
+git init
+git add .
+git commit -m "initial commit"
+git status # just to check
+
+ssh-keygen -t rsa -b 4096 -C "your-email@gmail.com"
+tail <path to_id_rsa.pub>  ##add this key to  your github account
+In github account: setting-->ssh and gpg keys--->new ssh key--->
+Title:# <give any name>
+key : <paste her id_rsa.pub key content>-----> add ssh key
+#begin with 'ssh-rsa'
+
+
+git remote add origin <ssh git url>
+#git@github.com:learncloudonline/JenkinsFirstProject.git
+get above url from github ssh "git@github.com:learncloudonline/JenkinsFirstProject.git"
+
+git push origin master
+
